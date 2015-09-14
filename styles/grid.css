@@ -1,0 +1,104 @@
+.row, .column {
+    box-sizing: border-box;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/** Defining columns */
+.column {
+    position: relative;
+    float: left;
+}
+
+/* creating the gutters that will seperate the grids */
+column + .column {
+    margin-left: 1%;
+}
+
+/* Calculating column widths */
+/*Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula:
+
+scw = (100 – (m * (mc – 1))) / mc
+    = (100 - (1*(12-1)))/12
+    = (100 - 11) /12
+    = 7.4166666667
+
+Where:
+
+    scw = single column width
+    m = margin (1%)
+    mc = maximum columns (12)
+
+
+When we plug in the numbers, we get a single column width of 6.86666666667%. From here we can use this number to calculate the rest of the column widths. The formula for this is:
+
+cw = (scw * cs) + (m * (cs – 1))
+    = (7.4166666667*cs) + (1*(cs-1)
+
+Where:
+
+    cw = column width
+    scw = single column width (7.4166666667)
+    cs = column span (1-12)
+    m = margin (1%)
+
+*/
+/* column sizes therefoe are */
+
+
+.column1 {
+    width: 7.4166666667%;
+}
+
+.column2 {
+    width: 15.83333333%;
+}
+
+.column3 {
+    width: 24.25%;
+}
+
+
+.column4 {
+    width: 36.66666667%;
+}
+
+.column5 {
+    width: 41.83333333%;
+}
+
+.column6 {
+    width: 49.5%;
+}
+
+
+.column7 {
+    width: 57.9166666667%;
+}
+
+.column8 {
+    width: 66.3333333%;
+}
+
+.column9 {
+    width: 74.75%;
+}
+
+
+.column10 {
+    width: 83.166666667%;
+}
+
+.column11 {
+    width: 91.583333333%;
+}
+
+.column12 {
+    width: 100%;
+}
