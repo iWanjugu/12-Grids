@@ -1,0 +1,44 @@
+/*------------------------------*\
+    Styling
+\*------------------------------*/
+
+body {
+    padding: 20px;
+}
+
+.column {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #777;
+    padding: 5px;
+    min-height: 30px;
+    text-align: center;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.p {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.column-4, .column-8 {
+    width: 33%;
+    color: #333;
+    text-align: center;
+    border-color: #000;
+}
+
+.column-8 {
+    width: 66%;
+}
+
+.red { background-color: red}
+.green { background-color: darkseagreen}
+.blue { background-color: skyblue}
+.orange { background-color: orange}
+.purple { background-color: mediumpurple}
