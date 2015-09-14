@@ -14,6 +14,7 @@ body {
     padding: 5px;
     min-height: 30px;
     text-align: center;
+    height: 150px;
 }
 
 .row:last-child {
@@ -26,15 +27,27 @@ body {
   padding-top: 100px;
 }
 
-.column-4, .column-8 {
-    width: 33%;
+
+.column-2, .column-4, .column-6, .column-8 {
     color: #333;
     text-align: center;
     border-color: #000;
 }
 
+.column-2 {
+    width: 16.666667%;
+}
+.column-3 {
+    width: 25%;
+}
+.column-4 {
+    width: 33.33333%;
+}
+.column-6 {
+    width: 50%;
+}
 .column-8 {
-    width: 66%;
+    width: 66.66667%;
 }
 
 .red { background-color: red}
@@ -42,3 +55,7 @@ body {
 .blue { background-color: skyblue}
 .orange { background-color: orange}
 .purple { background-color: mediumpurple}
+
+#container2 {
+    margin-top: 20px;
+}
