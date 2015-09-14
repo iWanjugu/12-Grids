@@ -1,6 +1,12 @@
+/****** CREATING 12 GRID COLUMNS ON PAGE **********/
+
+/* To include the padding and border within the declared width and height of an element. Useful for calculations */
 .row, .column {
     box-sizing: border-box;
 }
+
+
+/* Clearing Floats */
 .row:before, .row:after {
     content: " ";
     display: table;
@@ -10,11 +16,13 @@
     clear: both;
 }
 
+
 /** Defining columns */
 .column {
     position: relative;
     float: left;
 }
+
 
 /* creating the gutters that will seperate the grids */
 column + .column {
@@ -49,9 +57,10 @@ Where:
     m = margin (1%)
 
 */
-/* column sizes therefoe are */
 
 
+
+/* column sizes therefore are */
 .column1 {
     width: 7.4166666667%;
 }
